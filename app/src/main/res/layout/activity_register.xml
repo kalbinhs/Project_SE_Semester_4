@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="55dp"
+    android:layout_weight="1"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/fnameRegisterPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="First Name"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/lnameRegisterPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/fnameRegisterPage"
+        android:hint="Last Name"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/usernameRegisterPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/lnameRegisterPage"
+        android:hint="Username"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/emailRegisterPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/usernameRegisterPage"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/passwordRegisterPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailRegisterPage"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/confirmPasswordRegisterPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordRegisterPage"
+        android:layout_marginTop="10dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/registerButtonRegisterPage"
+        android:layout_width="137.5dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/confirmPasswordRegisterPage"
+        android:layout_marginTop="20dp"
+        android:text="Register ->" />
+
+    <Button
+        android:id="@+id/signInButtonRegisterPage"
+        android:layout_width="137.5dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/confirmPasswordRegisterPage"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/registerButtonRegisterPage"
+        android:text="Sign In ->" />
+
+</RelativeLayout>
